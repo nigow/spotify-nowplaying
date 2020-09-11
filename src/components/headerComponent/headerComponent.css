@@ -1,0 +1,19 @@
+.Header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    color: #61dafb;
+}
+
+.Header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Header li{
+    display: inline-block;
+    margin: 5px;
+}
