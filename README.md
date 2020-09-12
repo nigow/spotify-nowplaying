@@ -1,3 +1,10 @@
+## Spotify Nowplaying Extension
+
+This is a Google Chrome extension that enables to share what is being played on Spotify to Twitter feed.
+After authorizing yourself, press "tweet" to post your favorite song you are playing now. 
+The post also contains the spotify link to your song so that your friends can listen to your song instantly.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
