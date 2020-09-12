@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './musicView.css';
 import musicLogo from './../../static/music.png'
 

@@ -4,9 +4,7 @@ import './authorizationButton.css'
 const AuthorizationButton = props => {
 
     return(
-        <div className="AuthorizationButton" onClick={props.onclick}>
-            {props.authButtonTitle}
-        </div>
+        <div className="AuthorizationButton" onClick={props.onclick}>authorize</div>
     )
 
 }

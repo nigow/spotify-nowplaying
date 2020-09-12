@@ -1,18 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './tweetButton.css'
 
-let twitterIntent = "https://twitter.com/intent/tweet?text=";
-
-
-const tweet = props => {
-    let str = `${localStorage.getItem("song")} - ${localStorage.getItem("artist")} - ${localStorage.getItem("album")}`
-    const link = `https://twitter.com/intent/tweet?hashtags=nowplaying&text=${str}`
-    console.log(link);
-    window.open(link); //TODO: window opens => somehow the previous sessions appears (why?)
-}
-
-
 const TweetButton = props => {
+    const tweet = () => {
+        let str = `${localStorage.getItem("song")} - ${localStorage.getItem("artist")} - ${localStorage.getItem("album")} ${localStorage.getItem("song_url")}`
+        const link = `https://twitter.com/intent/tweet?hashtags=nowplaying&text=${str}`
+        console.log(link);
+        window.open(link); //TODO: window opens => somehow the previous sessions appears (why?)
+    }
+
     return(
         <div className={styles.TweetButton} onClick={() => tweet(props)}>
             {props.tweetButtonTitle}
