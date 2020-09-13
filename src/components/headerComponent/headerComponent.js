@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import AuthorizationButton from '../authorizationButton/authorizationButton';
 import TweetButton from '../tweetButton/tweetButton';
 import Reloader from "../reloader/Reloader";
@@ -9,18 +9,6 @@ const HeaderComponent = props => {
     window.spotifyCallback = () => {
         window.close();
     }
-
-    useEffect(() => {
-        /*
-        This is to close the pop-up window while getting the access token in the hashed fragment
-        //  */
-        // let token = window.location.hash.substr(1).split('&')[0].split("=")[1];
-        //
-        // if (token){
-        //     localStorage.setItem("accessToken", token);
-        //     window.spotifyCallback();
-        // }
-    }, [])
 
     const click = () => {
         window.open(process.env.REACT_APP_CLIENT_CODE, 'Login with Spotify', 'width=800,height=600');

@@ -1,3 +1,5 @@
+import noMusicFound from './ReloadHelper'
+
 export function authorizationHelper(){
     window.close();
 }
@@ -11,4 +13,6 @@ export const CurrentState = {
 
 export function unauthorizedMessage(){
     alert("Authorize first")
+    noMusicFound();
+
 }

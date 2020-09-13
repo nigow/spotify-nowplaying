@@ -32,6 +32,7 @@ class App extends React.Component{
             default:
                 break;
         }
+        this.setState({state: this.state});
     };
 
     componentDidMount() {
