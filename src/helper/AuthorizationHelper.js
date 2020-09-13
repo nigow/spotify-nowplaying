@@ -1,4 +1,4 @@
-import noMusicFound from './ReloadHelper'
+import {noMusicFound} from './ReloadHelper'
 
 export function authorizationHelper(){
     window.close();
